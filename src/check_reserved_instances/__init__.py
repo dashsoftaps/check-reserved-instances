@@ -75,8 +75,8 @@ def cli(config):
 
         if aws_account['rds'] is True:
             results = calculate_rds_ris(session, results)
-        if aws_account['elasticache'] is True:
-            results = calculate_elc_ris(session, results)
+#        if aws_account['elasticache'] is True:
+#            results = calculate_elc_ris(session, results)
 
     report = {}
     report['EC2 Classic'] = report_diffs(
